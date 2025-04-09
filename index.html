@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arvind Jagassar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexstyle.css">
+
+</head>
+
+<body>
+    <!-- Page Header -->
+    <h1>Arvind Jagassar</h1>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" aria-label="Fourth navbar example"> <!--sticky-top used for navbar to remain active throughout the entire page-->
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a> <!--Link to top page-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#GISSkills">GIS Capabilities</a> <!--Link within page-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a> <!--Link within page-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class=" text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+                <h1 class="display-5 fw-bold text-white">Welcome to Arvind's Page!</h1>
+                <div class="col-lg-6 mx-auto fw-bold text-white">
+                    <p class="fs-5 mb-4"> This site contains Arvind's Professional GIS Career Page</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <div class="text-center">
+                            <!-- Button to Open a Modal Window -->
+                            <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold text-black" data-bs-toggle="modal" data-bs-target="#videoModal"
+                                id="openModalButton">
+                                Where I am from
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-muted text-end">Photo taken by Arvind Jagassar</p>
+    </header>
+
+    <!-- Modal to play local video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center w-100" id="videoModalLabel">Where I am from</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Local Video -->
+                    <div class="ratio ratio-16x9">
+                        <video id="localVideo" controls>
+                            <source src="video1.mp4" type="video/mp4" title="Local video" allowfullscreen>
+                            </source>
+                        </video>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-muted">Created by Arvind Jagassar, with ArcGIS Pro (© 2024 Microsoft Corporation © 2024 Maxar ©CNES (2024) Distribution Airbus DS)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="videoModal.js"></script>
+
+    <!-- Bio -->
+    <h1 class="text-center">BIO</h1>
+    <p>Arvind Jagassar graduated in 2020 with a BEd. in Geography Education, as well as an MSc. in Integrated Coast and
+        Ocean Management, in 2022, from the University of Trinidad and Tobago. He gained interest in GIS while studying
+        and working under his GIS lecturer, for both degrees. He also worked under the same lecturer as a GIS/Remote
+        Sensing Research Assistant. He grew to love GIS after witnessing its applicative diversity. With his current GIS
+        skills and the new skills he will acquire in the BTech GIS program, Arvind's focus is on Cartography as well as
+        data analytics and visualization.</p>
+
+        <!--Cards-->
+        <h1 id="GISSkills">GIS Capabilities</h1>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-bold">GIS Skills</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title "> <small class="text-body-secondary fw-bold">Previous and newly acquired GIS skills since studying at BCIT</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Digitizing</li>
+                            <li>Geoprocessing Models</li>
+                            <li>Deep Learning Workflows</li>
+                            <li>GIS Database</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-bold">Software Proficiencies</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title "><small class="text-body-secondary fw-bold">Softwares used for GIS-Related Projects</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>ArcGIS Pro</li>
+                            <li>Python</li>
+                            <li>AutoCAD</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm ">
+                    <div class="card-header py-3 ">
+                        <h4 class="my-0 fw-bold">Future GIS Pathways</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title"><small class="text-body-secondary fw-bold">Future GIS Pathways of Interest</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Cartography</li>
+                            <li>Pipeline/Utility Mapping</li>
+                            <li>GIS Consulting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--Separate card adjusted to the center of the screen-->
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center justify-content-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm ">
+                    <div class="card-header py-3">
+                        <h2 class="my-0 fw-bold">Previous GIS-Related Experience</h2>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title "> <small class="text-body-secondary fw-bold"></small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>GIS/Remote Sensing Research Assistant;</li>
+                            <li>Master's Project: Deep Learning for Automated Image Processing and Classification of Coral Reefs;</li>
+                            <li>Publication: <a href="https://doi.org/10.1109/IGARSS53475.2024.10642765" target="_blank">Detection of Two
+                                Major Flooding Events on the Island of Trinidad In 2018 and 2022 Using Google Earth Engine and
+                                Sentinel-1 SAR Imagery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--Table-->
+    <h2 class="text-center mb-4">List of Projects</h2>
+    <div class="table-responsive">
+        <table class="table text-center table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th style="width: 20%;">#</th>
+                    <th style="width: 25%;">Project</th>
+                    <th style="width: 25%;">Date</th>
+                    <th style="width: 25%;">Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="text-start text-center">1</th>
+                    <td>
+                        <h3>Impacts of Ocean Currents and Circulation on Sargassum movements in the Atlantic</h3>
+                    </td>
+                    <td>
+                        <h3>June, 2023</h3>
+                    </td>
+                    <td>
+                        <h3>Hamburg, Germany</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start text-center">2</th>
+                    <td>
+                        <h3>Deep Learning Applications for coastal habitat monitoring: A preliminary study</h3>
+                    </td>
+                    <td>
+                        <h3>October, 2023</h3>
+                    </td>
+                    <td>
+                        <h3>Xiamen, China</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start text-center">3</th>
+                    <td>
+                        <h3>Sargassum Monitoring in Tobago</h3>
+                    </td>
+                    <td>
+                        <h3>February, 2024</h3>
+                    </td>
+                    <td>
+                        <h3>New Orleans, United States</h3>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+    <!--Carousel to display contact info-->
+    <h2 id="Contact">Contact Info</h2>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Inner (Slides) -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="img3.jpg" class="d-block w-100" alt="First slide">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                <h5 class="fs-1"><a href="https://www.linkedin.com/in/arvind-jagassar-599843205" target="_blank">LinkedIn</a></h5>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img src="img3.jpg" class="d-block w-100" alt="Second slide">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+              <h5 class="fs-1"><a href="https://www.researchgate.net/profile/Arvind-Jagassar" target="_blank">ResearchGate</a></h5>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="img3.jpg" class="d-block w-100" alt="Second slide">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center h-100">
+                <h5 class="fs-1">Other Contact Info</h5>
+                <p class="text-white">Email: arvindjagassar@gmail.com</p>
+                <p class="text-white">Phone: 778-903-2845</p>
+            </div>
+          </div>
+          
+        <!-- Controls (Previous/Next) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <footer class="footer mt-auto py-3 bg-body-tertiary bg-light">
+        <div class="container">
+            <span class="text-body-secondary">
+                &#x24B8; Arvind Jagassar  - created with code snipits from bootstrap examples 5.3.3
+            </span>
+        </div>
+    </footer>
+
+    <script> src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"; integrity = "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"; crossorigin = "anonymous"</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
